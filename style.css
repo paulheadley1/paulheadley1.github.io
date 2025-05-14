@@ -1,0 +1,302 @@
+/* reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* -----GENERAL STYLES----- */
+body {
+  font-family: "Times New Roman", Times, Georgia, serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f3f4;
+}
+h1,
+h2,
+h2,
+h3,
+h4 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+.highlight {
+  color: #cc0033;
+}
+/* -----HEADER STYLES----- */
+.header {
+  display: block;
+  height: auto;
+  background-color: #f2f3f4;
+  padding-top: 50px;
+}
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f3f4;
+  min-width: 480px;
+}
+.header nav ul {
+  gap: 2.5rem;
+  list-style: none;
+  padding: 0;
+}
+.header nav li a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 5px darkgrey;
+  padding: 10px 20px;
+  background-color: #f2f3f4;
+}
+.header nav li a:hover {
+  text-decoration: underline;
+}
+
+/*-----BODY STYLES (HOME) -----*/
+
+.main-content h1 {
+  display: block;
+  text-align: center;
+  font-size: 5em;
+  font-weight: lighter;
+  padding: 30px;
+}
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.image {
+  flex: 0 0 auto;
+  width: 480px;
+}
+.image img {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.text-content {
+  flex: 1 1 54%;
+  border-bottom: 1px solid #6c7c59;
+  font-size: 1.2em;
+}
+
+.text-content a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.35s ease-in-out;
+}
+.text-content a:hover {
+  color: #cc0033;
+}
+/*-----BODY STYLES (R&P) -----*/
+#projects h1 {
+  text-align: center;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 5px darkgrey;
+}
+
+#projects ol,
+#projects ul {
+  list-style: none;
+}
+#projects h2 {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 5px darkgrey;
+}
+#projects time {
+  display: inline-block;
+  margin-top: 0.75rem;
+}
+
+#projects section {
+  padding: 1.5rem;
+}
+
+#projects section > * + * {
+  margin-top: 0.75rem;
+}
+
+#projects li + li {
+  margin-top: 0.5rem;
+}
+
+#projects li {
+  list-style: disc inside url("https://img.icons8.com/metro/12/grenade.png");
+}
+#projects section p {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+/*-----BODY STYLES (CONTACT) -----*/
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 0 auto;
+  /*   border: 1px solid black; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-image img {
+  border-radius: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.socials a:link,
+a:visited {
+  background-color: #f2f3f4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.socials i {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  vertical-align: middle;
+}
+
+.socials a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #cc0033;
+  transform: scale(1.05);
+}
+/*-----BODY STYLES (ABOUT) -----*/
+.about-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2em;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about-text {
+  max-width: 700px;
+  padding: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  font-size: 1.3rem;
+}
+
+strong.name {
+  color: black;
+  transition: color 1s ease-in-out;
+}
+
+strong.name:hover {
+  color: #cc0033;
+}
+.about-image img {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.about-text a:link,
+.about-text a:visited {
+  background-color: #f2f3f4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: black;
+  padding: 5px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.35s ease-in-out, color 1s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.about-text a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+  color: #cc0033;
+  transform: scale(1.03);
+}
+
+/*-----FOOTER STYLES-----*/
+footer {
+  padding: 30px;
+  background-color: #f2f3f4;
+}
+footer p {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  color: #cc0033;
+}
+
+/*-----RESPONSIVE FOR SMALLER SCREENS-----*/
+@media (max-width: 1024px) {
+  body {
+    font-size: 1.2rem;
+  }
+  .main-menu {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+  .main-menu li {
+    width: 100%; /* take full width */
+    text-align: center; /* center link text */
+  }
+
+  .main-menu li a {
+    width: 100%;
+    display: block;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-content {
+    border-bottom: 0;
+  }
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-text {
+    border-right: 0;
+  }
+  .about-text .cta {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1.2rem;
+  }
+  .image {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  .about-image img {
+    transform: scale(0.8);
+  }
+}
+
